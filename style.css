@@ -165,12 +165,14 @@ footer {
   }
 
   .container {
-    margin: 1rem auto;
+    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .socials > .container {
+    padding: 0;
     margin: 0;
     width: 100%;
   }
