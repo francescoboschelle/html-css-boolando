@@ -1,9 +1,7 @@
 /* #region debug */
 
-.debug {
-  * {
-    border: 1px dashed black;
-  }
+.debug * {
+  border: 1px dashed black;
 }
 
 /* #endregion debug */
@@ -152,4 +150,30 @@ main {
 /* #endregion main */
 
 /* #region footer */
+
+footer {
+  color: white;
+  background-color: var(--dis-bg-footer);
+
+  a {
+    margin-right: 1rem;
+  }
+
+  h3,
+  .socials > p {
+    margin-bottom: 0.75rem;
+  }
+
+  .container {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials > .container {
+    margin: 0;
+    width: 100%;
+  }
+}
+
 /* #endregion footer */
