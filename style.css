@@ -1,7 +1,9 @@
 /* #region debug */
 
-* {
-  border: 1px dashed black;
+.debug {
+  * {
+    border: 1px dashed black;
+  }
 }
 
 /* #endregion debug */
@@ -13,7 +15,6 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  text-decoration: none;
 }
 
 :root {
@@ -28,6 +29,7 @@ img {
 }
 
 a {
+  text-decoration: none;
   color: white;
 }
 
@@ -47,27 +49,6 @@ body {
   margin: 0 auto;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
-}
-
-.col-4 {
-  width: calc(100% / 12 * 4);
-  padding: 1rem;
-}
-
-.card {
-  position: relative;
-
-  .favorite {
-    background-color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
 /* #endregion common */
 
 /* #region header */
@@ -97,6 +78,54 @@ header {
 /* #endregion header */
 
 /* #region main */
+
+main {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+  }
+
+  .col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 1rem;
+  }
+
+  .card {
+    position: relative;
+
+    .favorite {
+      padding: 0.5rem;
+      color: black;
+      background-color: white;
+      position: absolute;
+      top: 1rem;
+      right: 0;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+
+      p {
+        color: red;
+        font-weight: 600;
+      }
+
+      .discount {
+        color: black;
+        font-weight: 400;
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
 /* #endregion main */
 
 /* #region footer */
