@@ -65,6 +65,11 @@ header {
     gap: 1rem;
   }
 
+  .account {
+    display: flex;
+    gap: 0.5rem;
+  }
+
   .container {
     display: flex;
     justify-content: space-between;
